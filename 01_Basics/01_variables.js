@@ -6,7 +6,10 @@ let accountEmail = "Bhushan@gmail.com"
 var accountPassword = "12345"
 accountCity = "Mumbai"
 let accountState // accountState is declared but not initialized
-let accountNewState = "Hyderabad"
+let accountNewStateWithNull = null
+accountCityNullWithNoDataTpye = null;
+let accountNewStateWithValue = "Hyderabad"
+
 
 //Overwrite
 //accountID = 456//This will throw error as const property value cannot be reinitalized(TypeError: Assignment to constant variable.)
@@ -15,9 +18,12 @@ accountPassword = "765674676"
 accountCity = "Bengaluru"
 console.log("accountState => "+accountState);  // Output: undefined
 console.log("typeof => "+typeof accountState);  // Output: undefined
-console.log("accountNewState => "+accountNewState);  // Output: Hyderabad
-console.log("typeof => "+typeof accountNewState);  // Output: string
-
+console.log("accountNewStateWithNull => "+accountNewStateWithNull); // Output: null// here, null is a value of type 'object' {typeof(null) => object}
+console.log("typeof => "+typeof accountNewStateWithNull);  // Output: object
+console.log("accountCityNullWithNoDataTpye => "+accountCityNullWithNoDataTpye);  // Output: null
+console.log("typeof accountCityNullWithNoDataTpye => "+typeof accountCityNullWithNoDataTpye);  // Output: object
+console.log("accountNewStateWithValue => "+accountNewStateWithValue);  // Output: Hyderabad
+console.log("typeof => "+typeof accountNewStateWithValue);  // Output: string
 console.table([accountID,accountEmail,accountPassword,accountCity,accountState]);
 
 
