@@ -1,3 +1,4 @@
+//Section 1 Basic
 let score = 33
 //output as number in lower case
 //console.log(typeof score) //number
@@ -8,7 +9,8 @@ let scoreInString = "33"
 //console.log(typeof scoreInString) //string
 //console.log(typeof(scoreInString))//string
 
-//"Number" while using in convsersion is class so N is in Upper Case
+//Section 2 Number conversion
+//For "Number" conversion type N in Upper Case as its a class
 
 let valueInNumber = Number(scoreInString)
 //console.log(valueInNumber) //33
@@ -41,9 +43,8 @@ let valueAsNull = Number(scoreAsNull)
 //console.log(valueAsNull) //0 <- This can pass wrong result as 0 degreee in calcuate temperature program if empty string is passed
 //console.log(typeof valueAsNull)//number
 
-/* If null or Empty string is paassed and converted into Number in JS then it will return output as 0
+/* If null or Empty string is passed and converted into Number in JS then it will return output as 0
 and type as number Ex. above scoreInEmptyString and scoreInNullString*/
-
 
 //Boolean
 let boolVal = true
